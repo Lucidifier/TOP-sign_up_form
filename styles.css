@@ -100,12 +100,48 @@ input {
   height: 3vh;
 }
 
+button {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+button[type="submit"] {
+  color: white;
+  background-color: #0486c2;
+  border-radius: 5px;
+  width: 10vw;
+}
+
 .sign-up {
   border: 1px solid red;
   flex: 1;
+  padding-left: 2vw;
+  padding-top: 2vh;
+  margin-bottom: -8vh;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+button[type="submit"] {
+  color: white;
+  background-color: #0486c2;
+  border-radius: 5px;
+  width: 12vw;
+  height: 6vh;
+ font-size: 1.2rem;
+  font-weight: bold; 
 }
 
 .sign-in {
   border: 1px solid red;
   flex: 1;
+  padding-left: 2vw;
+  font-size: 1.2rem;
 }
