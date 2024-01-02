@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: planewalker;
+  src: url(planewalker.woff);
+}
+
 .container {
   display: flex;
   flex-direction: row;
@@ -24,7 +29,7 @@
 .logo {
   display: flex;
   justify-content: center;
-  font-size: 7rem;
+ 
   background-color: rgba(0, 0, 0, 0.1);
   margin-top: 20vh;
   padding: 5vh 0 5vh 0;
@@ -38,7 +43,8 @@
 }
 
 .logo_text {
-
+  font-family: planewalker;
+  font-size: 7rem;
 }
 
 .footer_1 {
@@ -51,21 +57,47 @@
   flex: 2;
   display: flex;
   flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
   border: 1px solid red;
   background-color: #e0e0e0;
   flex: 1;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  
   font-size: 1.5rem;
   font-weight: bold;
-  padding: 15vh 10vw 0vh 5vw;
+  padding: 15vh 10vw 5vh 2vw;
 }
 
 form {
   border: 1px solid red;
+  padding: 2vh 10vw 3vh 2vw;
   flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+form p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.input_row {
+  display: flex;
+  gap: 5vw;
+}
+
+.input_item {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 15vw;
+  height: 3vh;
 }
 
 .sign-up {
