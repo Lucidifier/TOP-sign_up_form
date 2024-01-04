@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-up Form</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
 </head>
 <body>
   <div class="container">
@@ -24,41 +25,43 @@
         <br>
         Excepteur sint <em>occaecat</em> cupidatat non proident.
       </header>
-      <form action="">
+      <form action="" method="get" id="form1">
         <p>Let's do it!</p>
         <div class="input_row">
           <div class="input_item">
             <label for="fname">first name</label>
-            <input type="text" id="fname" name="first_name">
+            <input type="text" id="fname" name="first_name" pattern="^[A-Za-z]{1,20}$" value="xd">
           </div>
           <div class="input_item">
             <label for="lname">last name</label>
-            <input type="text" id="lname" name="last_name">
+            <input type="text" id="lname" name="last_name" pattern="^[A-Za-z]{1,20}$">
           </div>
         </div>
         <div class="input_row">
           <div class="input_item">
             <label for="email">email</label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email" maxlength="30">
           </div>
           <div class="input_item">
             <label for="phone">phone number</label>
-            <input type="tel" id="phone" name="phone">
+            <input type="tel" id="phone" name="phone" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}">
           </div>
         </div>
         <div class="input_row">
           <div class="input_item">
-            <label for="password">password</label>
-            <input type="password" id="password" name="password">
+            <label class="password123" for="password">password</label>
+            <input class="pw1" type="password" id="password" name="password">
+            <span>*passwords must match</span>
           </div>
           <div class="input_item">
             <label for="password_confirmed">confirm password</label>
-            <input type="password" id="password_confirmed" name="password_confirmed">
+            <input class="pw2" type="password" id="password_confirmed" name="password_confirmed">
+            
           </div>
         </div>
       </form>
       <div class="sign-up">
-        <button type="submit">Create Account</button>
+        <button type="submit" form="form1" value="cAcc">Create Account</button>
       </div>
       <div class="sign-in">
         <p>Already have an account? <a href="">Log in</a></p>

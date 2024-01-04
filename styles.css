@@ -61,7 +61,6 @@
 }
 
 header {
-  border: 1px solid red;
   background-color: #e0e0e0;
   flex: 1;
   
@@ -71,7 +70,6 @@ header {
 }
 
 form {
-  border: 1px solid red;
   padding: 2vh 10vw 3vh 2vw;
   flex: 2;
   display: flex;
@@ -98,6 +96,35 @@ form p {
 input {
   width: 15vw;
   height: 3vh;
+  border: 2px solid grey;
+  border-radius: 5px;
+  background-color:transparent;
+  
+  outline: none;
+}
+
+
+
+input:focus {
+  border: 2px solid #0486c2;
+  box-shadow: 0 0 3px 1px #227755;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+span {
+  font-size: 0.9rem;
+  color: red;
+}
+
+.invis {
+  display: none;
 }
 
 button {
@@ -115,11 +142,11 @@ button[type="submit"] {
 }
 
 .sign-up {
-  border: 1px solid red;
   flex: 1;
   padding-left: 2vw;
   padding-top: 2vh;
   margin-bottom: -8vh;
+  background-color: #e0e0e0;
 }
 
 button {
@@ -140,8 +167,16 @@ button[type="submit"] {
 }
 
 .sign-in {
-  border: 1px solid red;
   flex: 1;
   padding-left: 2vw;
   font-size: 1.2rem;
+  background-color: #e0e0e0;
+}
+
+a:link {
+  color: #0486c2;
+}
+
+a:visited {
+  color: #0486c2;
 }
